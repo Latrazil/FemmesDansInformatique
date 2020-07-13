@@ -1,0 +1,182 @@
+@font-face{
+	font-family:"Font1";
+	src : url('polices/JMH Typewriter.ttf') format("truetype");
+}
+
+@font-face{
+	font-family:"Font2";
+	src : url('polices/Fragmentcore.otf') format("opentype");
+}
+/*Je déclare deux familles de fonte, soit polices d'écriture*/
+body{
+	background-color:black;
+	background-image:url(images/bg.png);
+	background-repeat:no-repeat;
+	background-attachment:local;
+	background-size:200%;
+	font-family:Font2,Georgia,Arial;
+	font-size: 20px;
+	text-decoration-skip-ink:none;
+}
+/*Je déclare les variables qui seront globalement appliquées*/
+#menuNav{
+	background-color:rgba(118,54,212,1);
+	border-bottom-right-radius:10px;
+	border-bottom-left-radius:10px;
+	width:100%;
+	top:0;
+	left:0;
+	margin:0;
+	padding:0;
+	position:fixed;
+	text-align:center;
+	z-index:1;
+}
+/*Je déclare à l'aide du css une barre de navigation en haut de la page qui défilera avec le scrooling*/
+#menuNav ul
+{
+color:black;
+overflow:hidden;
+}
+/*Je fais en sorte que mon texte ne dépasse pas de ul*/
+#menuNav ul li
+{
+border: 10px black solid;
+border-image:radial-gradient(ellipse, rgba(133,78,214,1) 0%, rgba(118,54,212,1) 100%)20;
+border-radius:10px;
+background:rgba(133,78,214,1);
+padding: 15px 15px;
+margin:0px 40px;
+display:inline-block;
+font-size:18px;
+}
+/*Je fais un display inline block pour organiser mon contenu en ligne*/
+#menuNav ul li:hover
+{
+	border-image:radial-gradient(ellipse, rgba(160,95,255,1) 0%, rgba(118,54,212,1) 100%)20;
+	background:rgba(160,95,255,1);	
+}
+/*Je fais un hover qui modifie la couleur de mon background ul li*/
+a{
+color:black;
+text-decoration:none;	
+}
+/*J'évite que les liens soient soulignés*/
+#Sommaire
+{
+	position:fixed;
+	top:129px;
+	background-color:white;
+	border: black 1px ridge;
+	border-radius:10px;
+	padding-right:15px;
+}
+/*Je fixe la position de mon sommaire pour qu'il scrool avec la barre */
+#corps
+{
+	background-color:white;
+	width:57%;
+	margin-top:70px;
+	margin-left:470px;
+	padding:30px;
+	text-align:justify;
+	border: black 1px ridge;
+	border-radius:10px;
+}
+/*Je crée un endroit où placer mon texte*/
+#titre{
+	font-size:auto;
+	font-style:italic;
+	padding:9px;
+	border:double black 2px;
+	text-align:center;
+}
+/*Je crée un titre et initialise les fonctions que je veux appliquer au texte*/
+h2{ 
+	padding-top:110px;
+	position:relative;  
+	top:-110px;
+	margin-bottom:-110px;
+	font-family: Font1,"Times New Roman";
+	font-size: 50px;
+	text-decoration: underline;
+	text-underline-position: under;
+}
+
+h3{ 
+	padding-top:125px;
+	position:relative;  
+	top:-125px;
+	margin-bottom:-125px;
+	font-family: Font1,"Times New Roman";
+	font-size: 30px;
+	padding-left:40px;
+	}
+/*Je  crée les titres et sous titres*/
+
+.parag{
+padding-left:50px;	
+}
+ .par{
+ padding-left:10px;		
+ }
+/*J'organise mes paragraphes en principal et sous parties*/
+ 
+ header{
+ 	padding-top:140px;
+	position:relative;  
+	top:-85px;
+	margin-bottom:-100px;
+	width:65%;
+	text-align: center;
+	background-color: white;
+	margin-left: 435px;
+	font-size: 40px;
+	border:black double;
+}
+
+/*Je crée un header pour la page 1 et 2*/
+
+img{
+	height:150px;
+	width:150px;
+	float:right;
+	margin-left:20px;
+	margin-top:16px;
+	border:4px black double;
+	border-radius:10px;
+	}
+
+/*Je définie la taille des images*/
+	
+#graph{
+	height:50%;
+	width:50%;
+	float:inherit;
+	margin-top:inherit;
+	margin-left:23px;
+	margin-bottom:23px;
+}
+
+/*Je définie la taille d'une image sur la page 2 plus grande que les autres*/
+
+.photo{
+	height:140px;
+	width:140x;
+}
+
+/*Je definie la taille des images pour les potraits de femmes connues de nos jours*/
+
+#corps3
+{
+	background-color:white;
+	width:57%;
+	margin-top:100px;
+	margin-left:270px;
+	padding:30px;
+	text-align:justify;
+	border: black 1px ridge;
+	border-radius:10px;
+}
+
+/*Je définie le corps de la page 3 soit l'acceuil, en effet n'ayant pas de sommaire il sera plus près du bord gauche*/
